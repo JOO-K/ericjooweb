@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Eric Web Proto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+
+  <link rel="icon" type="image/png" href="">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="container">
+
+      <a href="index.html">
+        <div class="cube" style="animation-duration: .6s; height: 150px; margin-left: -1px; margin-top: -1px">
+          <div class="facetopstart top"></div>
+          <div class="facestart left"></div>
+          <div class="facelongstart front marqueewrapper">
+            <h1>eric joo</h1>
+            <h2 class="marquee">m o t i o n d e s i g n e r</h2>
+            <img src="./images/eye.gif">
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: .8s;">
+          <div class="facelong top"></div>
+          <div class="face left">1</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1s;">
+          <div class="facelong top"></div>
+          <div class="face left">2</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.2s;">
+          <div class="facelong top"></div>
+          <div class="face left">3</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.4s;">
+          <div class="facelong top"></div>
+          <div class="face left">4</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.6s;">
+          <div class="facelong top"></div>
+          <div class="face left">5</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.8s;">
+          <div class="facelong top"></div>
+          <div class="face left">6</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 2s;">
+          <div class="facelong top"></div>
+          <div class="face left">7</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 2.2s;">
+          <div class="facelong top"></div>
+          <div class="face left">8</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 2.4s;">
+          <div class="facelong top"></div>
+          <div class="face left">9</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 2.6s;">
+          <div class="facelong top"></div>
+          <div class="face left">10</div>
+          <div class="facelong front">Front</div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="container-2">
+
+      <a href="">
+        <div class="cube" style="animation-duration: .8s; margin-left: -1px;">
+          <div class="face top"></div>
+          <div class="face left">1</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1s; margin-left: -1px;">
+          <div class="face top"></div>
+          <div class="face left">2</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.2s; margin-left: -.5px;">
+          <div class="face top"></div>
+          <div class="face left">3</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.4s;">
+          <div class="face top"></div>
+          <div class="face left">4</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.6s;">
+          <div class="face top"></div>
+          <div class="face left">5</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.6s;">
+          <div class="face top"></div>
+          <div class="face left">6</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="cube" style="animation-duration: 1.6s;">
+          <div class="face top"></div>
+          <div class="face left">7</div>
+          <div class="face front">Front</div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+    <!-- JAVASCRIPT PRELOADS & EXAMPLES -->
+
+    <!-- tilt.js -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+
+      var card = document.querySelectorAll(".card")
+      for (var i = 0; i < card.length; i++) {
+        card[i].setAttribute("data-tilt", "");
+        card[i].setAttribute("data-tilt-reset", "false");
+      }
+
+      VanillaTilt.init(card, {
+        reverse: true,
+        max: 30,
+        startX: -0,
+        startY: -0,
+        speed: 5000,
+
+        scale: 1.010,
+        transition: true,
+        gyroscope: true,
+        gyroscopeMaxAngleX: 20,
+        gyroscopeMinAngleX: -20
+      });
+    </script>
+
+    <script>
+
+      // Reset VanillaTilt
+
+      timeOut = 500; // delay in milliseconds
+
+      $(".container").mouseleave(function () {
+        setTimeout(function () {
+          var card = document.querySelectorAll(".card")
+          for (var i = 0; i < card.length; i++) {
+            card[i].vanillaTilt.destroy();
+          }
+          VanillaTilt.init(card, {
+            reverse: true,
+            max: 30,
+            startX: 0,
+            startY: 0,
+            speed: 5000,
+            scale: 1.010,
+            transition: true,
+            gyroscope: true,
+            gyroscopeMaxAngleX: 20,
+            gyroscopeMinAngleX: -20
+          });
+        }, timeOut);
+      })
+
+    </script>
+
+    <!--  Typewriter.js  -->
+    <script>
+      var app = document.getElementById('typewriter');
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+
+      typewriter
+        .typeString('eric joo')
+        .pauseFor(5000)
+        .deleteChars(8)
+        .typeString('design')
+        .start();
+    </script>
+
+
+    <!-- Marquee Script -->
+    <script>
+
+      const marquees = [...document.querySelectorAll('.marquee')];
+
+      marquees.forEach((marquee) => {
+        marquee.innerHTML = marquee.innerHTML + '&nbsp;'.repeat(10);
+        marquee.i = 0;
+        marquee.step = .3;
+        marquee.width = marquee.clientWidth + 1;
+        marquee.style.position = '';
+        marquee.innerHTML = `${marquee.innerHTML}&nbsp;`.repeat(10);
+
+        marquee.addEventListener('mouseenter', () => (marquee.step = 0), false);
+        marquee.addEventListener('mouseleave', () => (marquee.step = .3), false);
+      });
+
+      requestAnimationFrame(move);
+
+      function move() {
+        marquees.forEach((marquee) => {
+          marquee.style.marginLeft = `-${marquee.i}px`;
+          marquee.i = marquee.i < marquee.width ? marquee.i + marquee.step : 1;
+        });
+
+        requestAnimationFrame(move);
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
