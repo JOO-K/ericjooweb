@@ -136,22 +136,22 @@ body {
     padding: 0px;
     margin: 0px;
     animation: textwiden .6s ease-in-out;
-    transform: scaleX(1.2);
+    transform: scale(1.2);
 }
 
 @keyframes textwiden {
 
   0% {
-    transform: scaleX(1);
+    transform: scale(1);
   }
 
   50% {
-    transform: scaleX(3);
+    transform: scale(5);
   }
 
 
   100% {
-    transform: scaleX(1.2);
+    transform: scale(1.2);
   }
 
 }
@@ -172,7 +172,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: grayscale(1)contrast(10);
+
   mix-blend-mode: screen;
 }
 
@@ -255,4 +255,75 @@ body {
   overflow: hidden;
   white-space: nowrap;
   position: absolute;
+}
+
+.clockfont{
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+
+.clockfont h1{
+  font-family: Graphik;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+#clock{
+  animation: opacity 8s linear;
+  opacity: .4;
+}
+
+
+@keyframes opacity {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .4;
+  }
+
+}
+
+.navicon{
+  position: absolute;
+  top: 39px;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  animation: loadicon .5s ease-out;
+}
+
+@keyframes loadicon {
+
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+
+}
+
+.navicon img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  animation: rotateicon 5s linear infinite;
+}
+@keyframes rotateicon {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }

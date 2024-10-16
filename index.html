@@ -13,12 +13,18 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-
 </head>
 
 <body>
 
   <div class="wrapper">
+
+    <div class="clockfont">
+      <h1><span id="typewriter"></span>　— <span id="clock"></span></h1>
+    </div>
+    <div class="navicon">
+        <img src="https://www.svgrepo.com/show/210641/plus.svg">
+    </div>
 
     <div class="container">
 
@@ -161,7 +167,11 @@
     </div>
 
   </div>
-    <!-- JAVASCRIPT PRELOADS & EXAMPLES -->
+
+
+  <!-- JAVASCRIPT PRELOADS & EXAMPLES -->
+
+  <span>
 
     <!-- tilt.js -->
     <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
@@ -227,10 +237,10 @@
       });
 
       typewriter
-        .typeString('eric joo')
-        .pauseFor(5000)
-        .deleteChars(8)
-        .typeString('design')
+        .typeString('안녕 Welcome to // Graphics Portfolio of 경현 Eric Joo')
+        .pauseFor(50000)
+        .deleteChars(20)
+        .typeString('GRAPHIX WORKS ARCHIVE')
         .start();
     </script>
 
@@ -264,12 +274,34 @@
       }
     </script>
 
+  </span>
 
+  <script>
 
+(function () {
 
+var clockElement = document.getElementById( "clock" );
 
+function updateClock ( clock ) {
+  clock.innerHTML = new Date().toLocaleString('en-US', {
+    timeZone: 'pst',
+    hourCycle: 'h23',
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+});
+}
 
+setInterval(function () {
+    updateClock( clockElement );
+}, 1000);
 
+}());
+
+  </script>
 
 
 </body>
