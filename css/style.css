@@ -31,7 +31,7 @@ body {
 .container {
   position: absolute;
   left: 13px;
-  top: 60px;
+  top: 65px;
   width: 200px;
   height: 150px;
   perspective: none;
@@ -41,8 +41,8 @@ body {
 
 .container-2 {
   position: absolute;
-  left: 192px;
-  top: 41px;
+  left: 191px;
+  top: 46px;
   width: 200px;
   height: 150px;
   perspective: none;
@@ -126,17 +126,17 @@ body {
 
 }
 
-.facelongstart h1{
+.facelongstart h1 {
   font-family: GraphikBold;
   font-size: 30px;
   color: white;
-  position:absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 0px;
-    margin: 0px;
-    animation: textwiden .6s ease-in-out;
-    transform: scale(1.2);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0px;
+  margin: 0px;
+  animation: textwiden .6s ease-in-out;
+  transform: scale(1.2);
 }
 
 @keyframes textwiden {
@@ -146,7 +146,7 @@ body {
   }
 
   50% {
-    transform: scale(5);
+    transform: scale(10);
   }
 
 
@@ -156,23 +156,22 @@ body {
 
 }
 
-.facelongstart h2{
+.facelongstart h2 {
   font-family: Graphik;
   font-size: 10px;
   letter-spacing: -1px;
   color: white;
-  position:absolute;
-    top: 0px;
-    left: 0px;
-    padding: 0px;
-    margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.facelongstart img{
+.facelongstart img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-
   mix-blend-mode: screen;
 }
 
@@ -188,6 +187,96 @@ body {
   background-color: red;
 }
 
+.cube:hover .face {
+  background-color: red;
+}
+
+.magenta {
+  transition: .2s;
+}
+
+.cyan {
+  transition: .2s;
+}
+
+.sap {
+  transition: .2s;
+}
+
+.cube:hover .cyan {
+  background-color: dodgerblue;
+}
+
+.cube:hover .magenta {
+  background-color: magenta;
+}
+
+.cube:hover .sap {
+  background-color: green;
+}
+
+.cube h5 {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: -93px;
+  font-family: Graphik;
+  font-size: 20px;
+  color: black;
+  line-height: 14px;
+  text-align: right;
+  transform: scaleX(1.2);
+  transform-origin: right;
+  background-color: orangered;
+  padding: 8px;
+  padding-left: 50px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.cube h6 {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: -46px;
+  width: 500px;
+  font-family: Graphik;
+  font-size: 10px;
+  color: black;
+  line-height: 14px;
+  text-align: right;
+  transform: scaleX(1.2);
+  transform-origin: right;
+}
+
+
+
+.cube h4 {
+  display: none;
+  position: absolute;
+  left: 110px;
+  top: -8px;
+  font-family: GraphikBold;
+  font-size: 12px;
+  color: black;
+  transform-style: preserve-3d;
+  transform: rotate3d(0, 1, 0, -45deg) translateZ(50px);
+  line-height: 14px;
+}
+
+
+.cube:hover h5 {
+  display: block;
+}
+
+.cube:hover h6 {
+  display: block;
+}
+
+.cube:hover h4 {
+  display: block;
+}
+
 
 .face {
   width: 50px;
@@ -199,8 +288,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
+}
+
+.face img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
 }
 
 .facelong {
@@ -251,26 +345,27 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .marquee {
   overflow: hidden;
   white-space: nowrap;
   position: absolute;
 }
 
-.clockfont{
+.clockfont {
   position: absolute;
   top: 16px;
   left: 22px;
 }
 
-.clockfont h1{
+.clockfont h1 {
   font-family: Graphik;
   font-size: 12px;
   padding: 0;
   margin: 0;
 }
 
-#clock{
+#clock {
   animation: opacity 8s linear;
   opacity: .4;
 }
@@ -288,7 +383,7 @@ body {
 
 }
 
-.navicon{
+.navicon {
   position: absolute;
   top: 39px;
   left: 22px;
@@ -310,12 +405,13 @@ body {
 
 }
 
-.navicon img{
+.navicon img {
   object-fit: contain;
   width: 100%;
   height: 100%;
   animation: rotateicon 5s linear infinite;
 }
+
 @keyframes rotateicon {
 
   0% {
@@ -326,4 +422,44 @@ body {
     transform: rotate(360deg);
   }
 
+}
+
+.bg-graphic {
+  position: fixed;
+  top: 0;
+  left: 208px;
+  width: 720px;
+  height: 358px;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  display: none;
+  transition: .5s;
+  mix-blend-mode: normal;
+  transform-style: unset;
+  transform: rotate3d(0, 0, 0);
+  border-radius: 30px 30px 0px 0px;
+}
+
+@keyframes bganimation {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+.cubehover:hover .bg-graphic {
+  display: block;
+}
+
+
+.bg-graphic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
