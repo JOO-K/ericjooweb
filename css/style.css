@@ -22,6 +22,19 @@ body {
   margin: 0;
 }
 
+::selection {
+  background: lightgray;
+  color: black;
+}
+
+/* Class to apply rainbow background */
+.rainbow-highlight {
+  background: linear-gradient(90deg, red, green, blue, indigo, violet);
+  background-size: 500%;
+  color: white;
+  display: inline-block; /* Necessary to animate background-position */
+}
+
 .wrapper {
   width: 20vw;
   height: 100vh;
